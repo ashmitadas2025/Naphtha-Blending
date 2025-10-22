@@ -1,0 +1,21 @@
+Naphtha Blending: CLient discussion on 17 th october
+
+Use case 1-onthly plan for NCU consumption:
+Primary Actor: CBT
+Parameters to be added in dashboard-
+a) Supplier Code, Supplier Name, Supplier type, Quantity(MT), Paraffin(%), Aromatics(%),Total Sulphur (Wppm), Naphtha Quality(detailed parameters), ETA at Haldia, comments
+
+Use case 2- Vessel Arrival Schedule:
+Primary Actor: CBT
+Parameters to be added in dashboard-
+a) Supplier Code, Supplier Name, Supplier type, Quantity(MT), Paraffin(%), Aromatics(%),Total Sulphur (Wppm), Naphtha Quality(detailed parameters), ETA at Haldia, comments
+
+Use case 3- 
+Primary Actor- CBT (for cost)
+There should be a provision to manually override the Naphtha Quality. This should be done by the NCR team. The data will be updated after monthly sampling for every month and calculation will be done from that point again. There is no particular sequence for Naphtha to be filled in tanks. Generally Light Naphtha is received in the tank containing light Naphtha previously, But, at times of increased consignments Medium Light Naphtha or heavy naphtha is received in light naphtha tanks. The constraints provided in the proposal should be honoured while loading the tank.
+The system will show- Tank Status > In the Status- the naphtha quality calculated using weighted avg. formula will be displayed. A manual edit option should be provided so that manual edit can be done and that status will be shown for that particular point of time until the naphtha tank gets refilled for the next time.
+The quantity of Naphtha can be received from OLPIS data in the respective tanks and the quality of the Naphtha can be received directly from the Lims data for the calculation. The Lims data will show all the important quality parameters. The user can select a date and then will select the name and parameter of the sample and then select the checkbox, then that quality of naphtha will get entered in the system. The cost calculation will always be weighted average.
+
+Use case-4 
+The system will predict which two tanks can give the required quality of naphtha. If there are multiple options, the system will provide that and the user will choose the best option. The system will also provide the combination of cost of the blended naphtha. For suction and blending, there is limitation for blending and no limitation for suction (mentioned in the constraint). The naphtha load should be entered manually. the load should be held constant until next update. The production target should be in accordance with the monthly value. A provision for manual override should be provided. The monthly planning load should be reset in every month. When there will be a manual update in the intermediate days, then that load data will be continued. The quality recommended by the system should maintain the target quality provided by the user and will also sustain the recommended quality for a certain period of time. what average quality of naphtha should be maintained for uniformity will be suggested by the system. Suction-blending recommendations should be provided in such a way that the uniformity in the quality can be maintained.
+The calculation planning should be done in a three month rolling basis.
